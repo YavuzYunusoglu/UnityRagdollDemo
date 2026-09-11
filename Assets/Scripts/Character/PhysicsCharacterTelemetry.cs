@@ -4,6 +4,9 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace RagdollDemo.Character
 {
@@ -31,9 +34,40 @@ namespace RagdollDemo.Character
         private int fixedStep;
         private int samplesSinceFlush;
 
+#if UNITY_EDITOR
+        private const string RecordingMenuPath = "Tools/RagdollDemo/Record Physics Telemetry";
+        private const string RecordingPreferenceKey = "RagdollDemo.Telemetry.AutoRecord";
+
+        /// <summary>
+        /// Editor-only, per-user switch. Backed by EditorPrefs rather than a scene
+        /// field so enabling a recording session never shows up as a scene diff.
+        /// </summary>
+        public static bool AutoRecord
+        {
+            get => EditorPrefs.GetBool(RecordingPreferenceKey, false);
+            set => EditorPrefs.SetBool(RecordingPreferenceKey, value);
+        }
+
+        [MenuItem(RecordingMenuPath)]
+        private static void ToggleAutoRecord() => AutoRecord = !AutoRecord;
+
+        [MenuItem(RecordingMenuPath, isValidateFunction: true)]
+        private static bool ValidateAutoRecordMenu()
+        {
+            Menu.SetChecked(RecordingMenuPath, AutoRecord);
+            return true;
+        }
+#else
+        // Telemetry is a development tool; player builds never auto-install it.
+        public static bool AutoRecord => false;
+#endif
+
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Install()
         {
+            if (!AutoRecord)
+                return;
+
             PhysicsCharacterMotor activeMotor = FindFirstObjectByType<PhysicsCharacterMotor>();
             if (activeMotor != null
                 && activeMotor.GetComponent<PhysicsCharacterTelemetry>() == null)

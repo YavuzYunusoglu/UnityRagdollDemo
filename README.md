@@ -1,92 +1,104 @@
 # RagdollDemo
 
-Unity 6 üzerinde **fizik tabanlı üçüncü şahıs karakter** prototipi.
+A physics-driven third-person character prototype built in Unity 6.
 
-**Hedef:** R.E.P.O. yönünde — çevreye ve darbelere fiziksel tepki veren ama oyuncunun kontrolünde kalan bir karakter.
-**Hedef değil:** Human: Fall Flat tarzı sürekli gevşek, salaş his.
+The goal is a character in the spirit of **R.E.P.O.** — one that reacts physically to the world and to impacts, while still answering to the player predictably. The explicit non-goal is the permanently loose, flailing feel of *Human: Fall Flat*.
 
 ---
 
-## Hızlı başlangıç
+## Getting started
 
-1. Unity **6000.3.8f1** ile aç.
-2. `Assets/Scenes/PhysicsCharacterDemo.unity` sahnesini aç.
-3. Play'e bas, Game penceresine tıkla (imleç kilitlenir).
+1. Open the project with Unity **6000.3.8f1**.
+2. Open `Assets/Scenes/PhysicsCharacterDemo.unity`.
+3. Enter Play mode and click inside the Game view — the cursor locks on click.
 
-| Girdi | Sonuç |
+| Input | Result |
 | --- | --- |
-| W / S | Bakış yönünde ileri / geri |
-| A / D | Aynı yöne bakarken sola / sağa |
-| Mouse X | Karakter + kamera yatay dönüşü |
-| Mouse Y | Kameranın dikey bakışı (gövde dik kalır) |
-| Esc | İmleci serbest bırakır, hareket girdisini keser |
-| Game'e sol tık | İmleci tekrar kilitler |
+| W / S | Move forward / backward along the camera's facing |
+| A / D | Strafe left / right without changing facing |
+| Mouse X | Turns the character and the camera together |
+| Mouse Y | Pitches the camera only; the body stays upright |
+| Esc | Releases the cursor and cuts movement input |
+| Left-click in Game view | Re-locks the cursor |
 
-Esc bir duraklatma menüsü değil: fizik devam eder, karakter frenler.
+Esc is not a pause menu. Physics keeps running; the character simply brakes to a stop.
 
-**Test etmek için sahnede:** rampa, 12/18/21 cm basamaklar ve itilebilir küpler var.
-**Düşüş testi:** Play sırasında Player > `Physics Character Balance Controller` bileşen menüsünden `Debug/Force Fall` veya `Debug/Force Stagger`.
+The scene includes a ramp, 12/18/21 cm steps, and pushable cubes for testing. To trigger a fall on demand, select **Player → Physics Character Balance Controller** during Play and use the component's context menu: `Debug/Force Fall` or `Debug/Force Stagger`.
 
 ---
 
-## Sahne yapısı
+## How the character is built
 
 ```
-Player          → Rigidbody (m=12) + Capsule + 4 script    [ana hareket gövdesi]
-  ├ Mascot      → görsel mesh
-  └ Rig         → görsel kemikler
-PhysicsRig      → 12 fizik proxy Rigidbody'si               ★ Player'ın child'ı DEĞİL
-Main Camera     → sağ omuz kamerası
-Plane + Cube×10 → zemin ve test parkuru
+Player          Rigidbody (m = 12) + capsule + 4 scripts     [the controlled body]
+  ├ Mascot      visual mesh
+  └ Rig         visual skeleton
+PhysicsRig      12 physics proxy rigidbodies                 ← a sibling of Player, not a child
+Main Camera     over-the-shoulder camera
+Plane, Cube×10  ground and test course
 ```
 
-Fizik iskeleti Transform hiyerarşisiyle değil, `ConfigurableJoint.connectedBody` bağlantılarıyla kurulu: **13 Rigidbody, 12 ConfigurableJoint**. Görsel kemikler fizik proxy'lerini `LateUpdate`'te takip eder.
+The physics skeleton is assembled through `ConfigurableJoint.connectedBody`, not through Transform parenting — **13 rigidbodies and 12 joints, all at the same hierarchy level**. The visual skeleton follows the physics proxies in `LateUpdate`.
 
-## Scriptler — `Assets/Scripts/Character/`
+This detail matters more than it looks: because `PhysicsRig` sits outside `Player`, a call such as `Player.GetComponentsInChildren<ConfigurableJoint>()` finds nothing. New code must take an Inspector reference or walk the joint graph instead.
 
-| Dosya | Ne yapar |
+## Scripts — `Assets/Scripts/Character/`
+
+| File | Responsibility |
 | --- | --- |
-| `PhysicsCharacterMotor.cs` | Hareket, kontrollü dönüş, zemin kontrolü, basamak çıkma |
-| `PhysicsCharacterBalanceController.cs` | Denge / sendeleme / düşme / kalkma state machine |
-| `ActiveRagdollPoseDriver.cs` | Duruş pozu, yürüyüş salınımı, yan adım, kalkış pozu |
-| `PhysicsBoneFollower.cs` | Fizik rotasyonlarını görsel iskelete aktarır |
-| `ShoulderCameraController.cs` | Omuz kamerası, mouse look, engel kontrolü |
-| `PhysicsCharacterTelemetry.cs` | Teşhis için CSV kaydı (`Diagnostics/`) |
+| `PhysicsCharacterMotor.cs` | Movement, controlled yaw, ground check, step-up solver |
+| `PhysicsCharacterBalanceController.cs` | Balance / stagger / fall / recovery state machine |
+| `ActiveRagdollPoseDriver.cs` | Resting pose, procedural gait, side-step, get-up pose |
+| `PhysicsBoneFollower.cs` | Copies physics rotations onto the visual skeleton |
+| `ShoulderCameraController.cs` | Shoulder camera, mouse look, obstruction handling |
+| `PhysicsCharacterTelemetry.cs` | Optional CSV diagnostics (see below) |
 
 ---
 
-## Nerede kaldık
+## Telemetry
 
-**Çalışıyor ve testten geçti**
-- Kamera yönünde WASD, kontrollü yaw, sağ omuz kamerası, imleç kilidi
-- Tam vücut fizik proxy zinciri + görsel kemik takibi
-- Mesafe tabanlı procedural yürüyüş (`2.0 m/tam çevrim`) ve A/D yan adımı
-- Rampa ve 12/18/21 cm basamak çıkışı
-- Dur-kalk savrulması çözüldü (hareket ivmesi tüm rig'e eşit uygulanıyor)
-- Düşüş / kalkış / kamera sistemi — *teknik testler geçti, hissiyat onayı bekliyor*
+Telemetry writes one CSV row per physics step to `Diagnostics/`. It is **off by default** and is enabled per developer through the Editor menu:
 
-**Sıradaki açık işler**
-1. Yeni kalkış ve kamera hissinin oyun testiyle onayı ← **en öncelikli**
-2. Bütün eklem drive değerlerini ortak bir "kontrollülük" seviyesine getirme
-3. Denge eşiklerinin ve gait değerlerinin hissiyata göre kilitlenmesi
-4. Eller ve nesne tutma sistemi (`HandPhysics_L/R` henüz yok)
-5. Zıplama, çömelme, koşma, hareketli platform
+> **Tools → RagdollDemo → Record Physics Telemetry**
 
-**Not:** Sahnedeki bazı denge ayarları script varsayılanlarından farklı — özellikle `staggerDriveScale = 0` ve `fallenDriveScale = 0`. Bunlar sendelemede ve düşüşte eklemleri tamamen gevşetiyor. Deneysel ayar mıydı, kalıcı tercih mi, netleşmesi gerekiyor.
+The setting lives in `EditorPrefs`, so turning it on for a tuning session produces no scene diff, and player builds never install the recorder. Adding the component to an object by hand still records regardless of the menu state — a manual add is treated as deliberate intent.
+
+`Diagnostics/` is git-ignored apart from `RecoveryReview/`, which holds the acceptance measurements and pre-change backups referenced by `RECOVERY_SMOOTHING_REVIEW.md`.
 
 ---
 
-## Çalışma biçimi
+## Current state
 
-- **Proje sahibi:** kodlama + bütün Inspector/sahne/fizik ayarları, hareket hissi kararı.
-- **Claude:** mekanizma anlatımı, kod inceleme, telemetri analizi, doğrulama, dokümantasyon. Açıkça istenmedikçe kod veya sahne ayarı değiştirmez.
+**Working and confirmed by play-testing**
 
-Teşhisler tahminle değil; sahne, script, Unity Console ve `Diagnostics/` telemetrisi üzerinden yürütülür.
+- Camera-relative WASD, controlled yaw, shoulder camera, cursor locking
+- Full-body physics proxy chain with visual bone following
+- Distance-based procedural gait (2.0 m per full cycle) and A/D side-stepping
+- Ramps and 12/18/21 cm steps
+- Stop-start whipping resolved by applying movement acceleration to the entire rig
+- Fall, get-up, and fall-camera behaviour — **feel approved (2026-09-12)**
+- Balance thresholds retuned so that fast turns and minor contacts no longer register as falls
+
+**Next up**
+
+1. Physics hands — `HandPhysics_L/R` proxies and wrist joints (only the visual `Hand_L/R` bones exist today)
+2. Object grabbing on top of those hands: reach target, joint-based grip, mass and force limits
+3. Bringing every joint drive to a consistent level of "controlledness"
+4. Jumping, crouching, running, moving platforms
 
 ---
 
-## Dokümantasyon
+## How we work
 
-- **`CLAUDE.md`** — tam teknik referans: mimari, joint tablosu, kütleler, bütün sayısal değerler, bilinen sınırlar, telemetri kullanımı. Karakterle ilgili işe başlamadan önce oku.
-- **`RECOVERY_SMOOTHING_REVIEW.md`** — 2026-09-08 düşüş/kalkış/kamera çalışmasının ölçüm kayıtları ve doğrulama sınırları.
-- **`Diagnostics/`** — fizik telemetrisi CSV'leri. `RecoveryReview/` altında kalkış kabul testleri, analiz scripti ve değişiklik öncesi yedekler.
+- **Project owner:** all code edits plus every Inspector, scene, and physics setting. Owns the call on how movement should feel.
+- **Claude:** explains mechanisms, reviews code, analyses telemetry, verifies behaviour, maintains documentation. Does not change code or scene settings unless explicitly asked.
+
+Diagnosis is grounded in the scene file, the scripts, the Unity Console, and the telemetry in `Diagnostics/` — not in guesswork.
+
+---
+
+## Documentation
+
+- **`CLAUDE.md`** — the full technical reference: architecture, joint and mass tables, every tuned value with its source, known limits, telemetry usage. Read it before touching the character.
+- **`RECOVERY_SMOOTHING_REVIEW.md`** — measurements and validation boundaries from the 2026-09-08 fall / get-up / camera rework.
+- **`Diagnostics/RecoveryReview/`** — acceptance runs, the analysis script, and pre-change backups.

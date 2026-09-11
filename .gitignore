@@ -105,3 +105,10 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Physics telemetry captures. One CSV per recorded Play session; these are
+# throwaway diagnostics, not project data. RecoveryReview/ is kept because it
+# holds the acceptance measurements and pre-change backups referenced by
+# RECOVERY_SMOOTHING_REVIEW.md.
+/[Dd]iagnostics/*
+!/[Dd]iagnostics/[Rr]ecoveryReview/
