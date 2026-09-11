@@ -4883,9 +4883,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  maxStepHeight: 0.25
-  stepCheckDistance: 0.12
-  stepUpSpeed: 3
+  maxStepHeight: 0.3
+  stepCheckDistance: 0.18
+  stepUpSpeed: 5
   stepSkin: 0.02
 --- !u!4 &6523228928271685640
 Transform:
@@ -5071,13 +5071,13 @@ MonoBehaviour:
   physicsRig: {fileID: 2065813870}
   motor: {fileID: 6388710581111057736}
   startupGraceTime: 1
-  staggerRelativeSpeed: 1
-  fallRelativeSpeed: 3
-  staggerRelativeAngularSpeed: 3
-  fallRelativeAngularSpeed: 7
-  staggerChestDeviation: 12
+  staggerRelativeSpeed: 2.5
+  fallRelativeSpeed: 5.5
+  staggerRelativeAngularSpeed: 12
+  fallRelativeAngularSpeed: 16
+  staggerChestDeviation: 28
   fallChestDeviation: 60
-  staggerDriveScale: 0
+  staggerDriveScale: 0.5
   staggerDuration: 0.35
   fallenDriveScale: 0
   minimumFallenDuration: 2
