@@ -1,0 +1,130 @@
+[
+  {
+    "Case": "acceptance-backward",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "-0,33s Balanced",
+      "2,01s Fallen",
+      "3,83s Recovering",
+      "6,09s Balanced"
+    ],
+    "RecoverySeconds": 2.2600000000000002,
+    "PeakRecoveryDegreesPerStep": 1.90119,
+    "PeakRecoveryAcceleration": 5.09681,
+    "PeakRecoveryAnchorSeparation": 0.00511,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 1E-05
+  },
+  {
+    "Case": "acceptance-forward",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "-0,32s Balanced",
+      "2,00s Fallen",
+      "4,58s Recovering",
+      "7,00s Balanced"
+    ],
+    "RecoverySeconds": 2.42,
+    "PeakRecoveryDegreesPerStep": 1.47668,
+    "PeakRecoveryAcceleration": 6.49004,
+    "PeakRecoveryAnchorSeparation": 0.0437,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 2E-05
+  },
+  {
+    "Case": "acceptance-low-ceiling",
+    "FinalState": "Fallen",
+    "Transitions": [
+      "-0,32s Balanced",
+      "2,00s Fallen",
+      "4,58s Recovering",
+      "8,60s Fallen",
+      "9,78s Recovering",
+      "13,80s Fallen"
+    ],
+    "RecoverySeconds": 8.040000000000001,
+    "PeakRecoveryDegreesPerStep": 1.39827,
+    "PeakRecoveryAcceleration": 30.52569,
+    "PeakRecoveryAnchorSeparation": 0.0304,
+    "FinalTilt": 70.30447,
+    "FinalSpeed": 1.11216
+  },
+  {
+    "Case": "acceptance-no-ground",
+    "FinalState": "Fallen",
+    "Transitions": [
+      "-0,32s Balanced",
+      "2,02s Fallen"
+    ],
+    "RecoverySeconds": 0.0,
+    "PeakRecoveryDegreesPerStep": null,
+    "PeakRecoveryAcceleration": null,
+    "PeakRecoveryAnchorSeparation": null,
+    "FinalTilt": 163.4418,
+    "FinalSpeed": 0.03499
+  },
+  {
+    "Case": "acceptance-saved-scene",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "-0,33s Balanced",
+      "2,01s Fallen",
+      "4,59s Recovering",
+      "7,01s Balanced"
+    ],
+    "RecoverySeconds": 2.42,
+    "PeakRecoveryDegreesPerStep": 1.47721,
+    "PeakRecoveryAcceleration": 6.49199,
+    "PeakRecoveryAnchorSeparation": 0.0437,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 2E-05
+  },
+  {
+    "Case": "acceptance-side",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "0,00s Balanced",
+      "2,02s Fallen",
+      "4,26s Recovering",
+      "6,70s Balanced"
+    ],
+    "RecoverySeconds": 2.44,
+    "PeakRecoveryDegreesPerStep": 1.71732,
+    "PeakRecoveryAcceleration": 11.88502,
+    "PeakRecoveryAnchorSeparation": 0.02472,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 2E-05
+  },
+  {
+    "Case": "acceptance-stagger",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "-0,32s Balanced",
+      "2,00s Staggering",
+      "2,36s Recovering",
+      "3,94s Balanced"
+    ],
+    "RecoverySeconds": 1.58,
+    "PeakRecoveryDegreesPerStep": 0.0,
+    "PeakRecoveryAcceleration": 2E-05,
+    "PeakRecoveryAnchorSeparation": 0.00084,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 2E-05
+  },
+  {
+    "Case": "baseline-forward",
+    "FinalState": "Balanced",
+    "Transitions": [
+      "-0,33s Balanced",
+      "2,01s Fallen",
+      "4,13s Recovering",
+      "5,25s Balanced"
+    ],
+    "RecoverySeconds": 1.12,
+    "PeakRecoveryDegreesPerStep": 4.4037,
+    "PeakRecoveryAcceleration": 16.14882,
+    "PeakRecoveryAnchorSeparation": 0.01182,
+    "FinalTilt": 0.0,
+    "FinalSpeed": 1E-05
+  }
+]

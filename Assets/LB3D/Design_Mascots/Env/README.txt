@@ -1,0 +1,1 @@
+The previews for this package were generated using a Linear color space. https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html

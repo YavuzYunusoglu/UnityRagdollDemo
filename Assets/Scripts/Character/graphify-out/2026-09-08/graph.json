@@ -1,0 +1,4976 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "label": "PhysicsCharacterMotor",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "physicscharactermotor",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "label": "ActiveRagdollPoseDriver",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s34"
+        ]
+      },
+      "norm_label": "activeragdollposedriver",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "activeragdollposedriver_ragdolldemo_character_jointtarget",
+      "label": "JointTarget",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s34"
+        ]
+      },
+      "norm_label": "jointtarget",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "physicsbonefollower_physicsbonefollower",
+      "label": "PhysicsBoneFollower",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "physicsbonefollower",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L4"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_balancestate",
+      "label": "BalanceState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "BalanceState",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true
+      },
+      "norm_label": "balancestate",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L14"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "label": "PhysicsCharacterTelemetry",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ]
+      },
+      "norm_label": "physicscharactertelemetry",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "label": "ShoulderCameraController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": "shouldercameracontroller",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "label": "PhysicsCharacterBalanceController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "physicscharacterbalancecontroller",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_jointdrivesnapshot",
+      "label": "JointDriveSnapshot",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true
+      },
+      "norm_label": "jointdrivesnapshot",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L22"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ondestroy",
+      "label": ".OnDestroy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": ".ondestroy()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L87"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ondisable",
+      "label": ".OnDisable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": ".ondisable()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L81"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_onenable",
+      "label": ".OnEnable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": ".onenable()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L79"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_update",
+      "label": ".Update()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "ClampMagnitude",
+            "receiver_type": "Vector2",
+            "lang": "csharp",
+            "line": "L96"
+          },
+          {
+            "callee": "ReadValue<Vector2>",
+            "receiver_type": "InputAction",
+            "lang": "csharp",
+            "line": "L96"
+          }
+        ]
+      },
+      "norm_label": ".update()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L93"
+    },
+    {
+      "id": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_fixedupdate",
+      "label": ".FixedUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s34"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Sin",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L53"
+          },
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L61"
+          },
+          {
+            "callee": "Euler",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L98"
+          }
+        ]
+      },
+      "norm_label": ".fixedupdate()",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L49"
+    },
+    {
+      "id": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_updategait",
+      "label": ".UpdateGait()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s34"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "ProjectOnPlane",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L110"
+          },
+          {
+            "callee": "Abs",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L112"
+          },
+          {
+            "callee": "Clamp01",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L114"
+          },
+          {
+            "callee": "MoveTowards",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L118"
+          },
+          {
+            "callee": "Sign",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L129"
+          },
+          {
+            "callee": "Repeat",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L133"
+          },
+          {
+            "callee": "Lerp",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L155"
+          }
+        ]
+      },
+      "norm_label": ".updategait()",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L102"
+    },
+    {
+      "id": "physicsbonefollower_physicsbonefollower_awake",
+      "label": ".Awake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "LogError",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L64"
+          },
+          {
+            "callee": "Inverse",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L94"
+          }
+        ]
+      },
+      "norm_label": ".awake()",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L60"
+    },
+    {
+      "id": "physicsbonefollower_physicsbonefollower_lateupdate",
+      "label": ".LateUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": ".lateupdate()",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L97"
+    },
+    {
+      "id": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "label": ".TryCalculateOptionalOffset()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "LogError",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L182"
+          },
+          {
+            "callee": "Inverse",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L189"
+          }
+        ]
+      },
+      "norm_label": ".trycalculateoptionaloffset()",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L170"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_checkground",
+      "label": ".CheckGround()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": ".IsCharacterCollider",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L168"
+          },
+          {
+            "callee": "Abs",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L168"
+          },
+          {
+            "callee": "SphereCastNonAlloc",
+            "receiver_type": "Physics",
+            "lang": "csharp",
+            "line": "L175"
+          },
+          {
+            "callee": "Cos",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L178"
+          },
+          {
+            "callee": "Dot",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L185"
+          }
+        ]
+      },
+      "norm_label": ".checkground()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L165"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ischaractercollider",
+      "label": ".IsCharacterCollider()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": ".IsCharacterCollider",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Contains",
+            "receiver_type": "HashSet",
+            "lang": "csharp",
+            "line": "L311"
+          }
+        ]
+      },
+      "norm_label": ".ischaractercollider()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L308"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_movewholerigup",
+      "label": ".MoveWholeRigUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": ".TickRecovering",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "MovePosition",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L425"
+          }
+        ]
+      },
+      "norm_label": ".movewholerigup()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L421"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "label": ".TickRecovering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": ".TickRecovering",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "MoveTowards",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L249"
+          },
+          {
+            "callee": "MoveTowards",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L259"
+          },
+          {
+            "callee": "MoveRotation",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L262"
+          },
+          {
+            "callee": "RotateTowards",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L262"
+          },
+          {
+            "callee": "Min",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L266"
+          },
+          {
+            "callee": "Angle",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L272"
+          }
+        ]
+      },
+      "norm_label": ".tickrecovering()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L245"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "label": ".Append()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Append",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L171"
+          }
+        ]
+      },
+      "norm_label": ".append()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L169"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "label": ".Awake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Find",
+            "receiver_type": "Array",
+            "lang": "csharp",
+            "line": "L57"
+          },
+          {
+            "callee": "Add",
+            "receiver_type": "List",
+            "lang": "csharp",
+            "line": "L62"
+          },
+          {
+            "callee": "LogWarning",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L64"
+          },
+          {
+            "callee": "GetFullPath",
+            "receiver_type": "Path",
+            "lang": "csharp",
+            "line": "L67"
+          },
+          {
+            "callee": "Combine",
+            "receiver_type": "Path",
+            "lang": "csharp",
+            "line": "L68"
+          },
+          {
+            "callee": "CreateDirectory",
+            "receiver_type": "Directory",
+            "lang": "csharp",
+            "line": "L69"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "StreamWriter",
+            "lang": "csharp",
+            "line": "L81"
+          },
+          {
+            "callee": "Log",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L82"
+          }
+        ]
+      },
+      "norm_label": ".awake()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L45"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_fixedupdate",
+      "label": ".FixedUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Clear",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L90"
+          },
+          {
+            "callee": "Inverse",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L109"
+          },
+          {
+            "callee": "DeltaAngle",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L112"
+          },
+          {
+            "callee": "WriteLine",
+            "receiver_type": "StreamWriter",
+            "lang": "csharp",
+            "line": "L127"
+          },
+          {
+            "callee": "ToString",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L127"
+          },
+          {
+            "callee": "Flush",
+            "receiver_type": "StreamWriter",
+            "lang": "csharp",
+            "line": "L131"
+          }
+        ]
+      },
+      "norm_label": ".fixedupdate()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L85"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_install",
+      "label": ".Install()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ]
+      },
+      "norm_label": ".install()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L34"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_ondestroy",
+      "label": ".OnDestroy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ]
+      },
+      "norm_label": ".ondestroy()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L136"
+    },
+    {
+      "id": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_writeheader",
+      "label": ".WriteHeader()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s132"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Clear",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L145"
+          },
+          {
+            "callee": "Append",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L146"
+          },
+          {
+            "callee": "WriteLine",
+            "receiver_type": "StreamWriter",
+            "lang": "csharp",
+            "line": "L166"
+          },
+          {
+            "callee": "ToString",
+            "receiver_type": "StringBuilder",
+            "lang": "csharp",
+            "line": "L166"
+          }
+        ]
+      },
+      "norm_label": ".writeheader()",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L143"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_lateupdate",
+      "label": ".LateUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Euler",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L98"
+          },
+          {
+            "callee": "SphereCastNonAlloc",
+            "receiver_type": "Physics",
+            "lang": "csharp",
+            "line": "L105"
+          },
+          {
+            "callee": "Min",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L112"
+          },
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L112"
+          }
+        ]
+      },
+      "norm_label": ".lateupdate()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L92"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onapplicationfocus",
+      "label": ".OnApplicationFocus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": ".onapplicationfocus()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L53"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_ondisable",
+      "label": ".OnDisable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": ".ondisable()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L51"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onenable",
+      "label": ".OnEnable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "LogError",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L41"
+          },
+          {
+            "callee": "Clamp",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L47"
+          }
+        ]
+      },
+      "norm_label": ".onenable()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L37"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "label": ".SetCursorLock()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": ".setcursorlock()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L118"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_update",
+      "label": ".Update()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Repeat",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L88"
+          },
+          {
+            "callee": "Clamp",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L89"
+          }
+        ]
+      },
+      "norm_label": ".update()",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L59"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumangularspeed",
+      "label": ".GetMaximumAngularSpeed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L416"
+          }
+        ]
+      },
+      "norm_label": ".getmaximumangularspeed()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L409"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumlinearspeed",
+      "label": ".GetMaximumLinearSpeed()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L404"
+          }
+        ]
+      },
+      "norm_label": ".getmaximumlinearspeed()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L397"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "label": ".TickFallen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": ".tickfallen()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L233"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "label": ".ApplyDriveScale()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Clamp01",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L373"
+          }
+        ]
+      },
+      "norm_label": ".applydrivescale()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L371"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "label": ".BeginRecovery()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "LookRotation",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L314"
+          },
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L318"
+          }
+        ]
+      },
+      "norm_label": ".beginrecovery()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L308"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcefall",
+      "label": ".DebugForceFall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "AddTorque",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L464"
+          }
+        ]
+      },
+      "norm_label": ".debugforcefall()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L457"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcestagger",
+      "label": ".DebugForceStagger()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "AddForce",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L454"
+          }
+        ]
+      },
+      "norm_label": ".debugforcestagger()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L447"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "label": ".EnterFallen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "norm_label": ".enterfallen()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L288"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "label": ".EnterStaggering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "norm_label": ".enterstaggering()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L282"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "label": ".SetState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Log",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L444"
+          }
+        ]
+      },
+      "norm_label": ".setstate()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L436"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_applymovementacceleration",
+      "label": ".ApplyMovementAcceleration()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "AddForce",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L151"
+          }
+        ]
+      },
+      "norm_label": ".applymovementacceleration()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L147"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "label": ".FixedUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "MoveTowardsAngle",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L105"
+          },
+          {
+            "callee": "Euler",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L116"
+          },
+          {
+            "callee": "MoveRotation",
+            "receiver_type": "Rigidbody",
+            "lang": "csharp",
+            "line": "L118"
+          },
+          {
+            "callee": "ProjectOnPlane",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L127"
+          },
+          {
+            "callee": "ClampMagnitude",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L133"
+          }
+        ]
+      },
+      "norm_label": ".fixedupdate()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L100"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_getcapsuleworlddimensions",
+      "label": ".GetCapsuleWorldDimensions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Max",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L343"
+          },
+          {
+            "callee": "Abs",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L343"
+          }
+        ]
+      },
+      "norm_label": ".getcapsuleworlddimensions()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L340"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_movecharacterbodiesup",
+      "label": ".MoveCharacterBodiesUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": ".movecharacterbodiesup()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L252"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "label": ".TryRaycastIgnoringCharacter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "RaycastNonAlloc",
+            "receiver_type": "Physics",
+            "lang": "csharp",
+            "line": "L282"
+          }
+        ]
+      },
+      "norm_label": ".tryraycastignoringcharacter()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L276"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "label": ".TryStepUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "ProjectOnPlane",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L201"
+          },
+          {
+            "callee": "Dot",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L213"
+          },
+          {
+            "callee": "Min",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L224"
+          },
+          {
+            "callee": "Cos",
+            "receiver_type": "Mathf",
+            "lang": "csharp",
+            "line": "L238"
+          }
+        ]
+      },
+      "norm_label": ".trystepup()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L192"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_finishrecovery",
+      "label": ".FinishRecovery()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "norm_label": ".finishrecovery()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L323"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_awake",
+      "label": ".Awake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "LogError",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L64"
+          },
+          {
+            "callee": "FindAction",
+            "receiver_type": "InputActionAsset",
+            "lang": "csharp",
+            "line": "L71"
+          }
+        ]
+      },
+      "norm_label": ".awake()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L55"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_cachecharacterbodies",
+      "label": ".CacheCharacterBodies()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Clear",
+            "receiver_type": "HashSet",
+            "lang": "csharp",
+            "line": "L316"
+          },
+          {
+            "callee": "Add",
+            "receiver_type": "HashSet",
+            "lang": "csharp",
+            "line": "L317"
+          },
+          {
+            "callee": "FindObjectsByType<ConfigurableJoint>",
+            "receiver_type": "Object",
+            "lang": "csharp",
+            "line": "L319"
+          },
+          {
+            "callee": "Contains",
+            "receiver_type": "HashSet",
+            "lang": "csharp",
+            "line": "L331"
+          }
+        ]
+      },
+      "norm_label": ".cachecharacterbodies()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L314"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_synchronizecontrolledyawtobody",
+      "label": ".SynchronizeControlledYawToBody()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": ".synchronizecontrolledyawtobody()",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L139"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "label": ".FixedUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "norm_label": ".fixedupdate()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L182"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isfallimpact",
+      "label": ".IsFallImpact()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "norm_label": ".isfallimpact()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L358"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isstaggerimpact",
+      "label": ".IsStaggerImpact()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "norm_label": ".isstaggerimpact()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L353"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "label": ".TickBalanced()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "norm_label": ".tickbalanced()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L207"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "label": ".TickStaggering()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "norm_label": ".tickstaggering()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L222"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatelaststableforward",
+      "label": ".UpdateLastStableForward()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "ProjectOnPlane",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L365"
+          }
+        ]
+      },
+      "norm_label": ".updatelaststableforward()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L363"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatemeasurements",
+      "label": ".UpdateMeasurements()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": ".TickBalanced",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "Inverse",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L345"
+          },
+          {
+            "callee": "Angle",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L347"
+          },
+          {
+            "callee": "Angle",
+            "receiver_type": "Vector3",
+            "lang": "csharp",
+            "line": "L349"
+          }
+        ]
+      },
+      "norm_label": ".updatemeasurements()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L339"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "label": ".Awake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "LogError",
+            "receiver_type": "Debug",
+            "lang": "csharp",
+            "line": "L153"
+          },
+          {
+            "callee": "GetComponentsInChildren<ConfigurableJoint>",
+            "receiver_type": "Transform",
+            "lang": "csharp",
+            "line": "L158"
+          },
+          {
+            "callee": "GetComponentsInChildren<Rigidbody>",
+            "receiver_type": "Transform",
+            "lang": "csharp",
+            "line": "L159"
+          },
+          {
+            "callee": "Inverse",
+            "receiver_type": "Quaternion",
+            "lang": "csharp",
+            "line": "L174"
+          }
+        ]
+      },
+      "norm_label": ".awake()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L146"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_scaledrive",
+      "label": ".ScaleDrive()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "norm_label": ".scaledrive()",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L389"
+    },
+    {
+      "id": "hashset",
+      "label": "HashSet",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "norm_label": "hashset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "inputaction",
+      "label": "InputAction",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "norm_label": "inputaction",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "inputactionasset",
+      "label": "InputActionAsset",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "norm_label": "inputactionasset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_layermask",
+      "label": "LayerMask",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "norm_label": "layermask",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_vector2",
+      "label": "Vector2",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "norm_label": "vector2",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_acceleratesconnectedbodies",
+      "label": "AcceleratesConnectedBodies",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "acceleratesconnectedbodies",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L51"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_isgrounded",
+      "label": "IsGrounded",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "isgrounded",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L44"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastappliedacceleration",
+      "label": "LastAppliedAcceleration",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "lastappliedacceleration",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L48"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastdesiredvelocity",
+      "label": "LastDesiredVelocity",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "lastdesiredvelocity",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L46"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastmoveinput",
+      "label": "LastMoveInput",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "lastmoveinput",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L45"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_laststeprise",
+      "label": "LastStepRise",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "laststeprise",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L50"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lasttargetacceleration",
+      "label": "LastTargetAcceleration",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "lasttargetacceleration",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L47"
+    },
+    {
+      "id": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_steppedthisfixedupdate",
+      "label": "SteppedThisFixedUpdate",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "PhysicsCharacterMotor",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s85"
+        ]
+      },
+      "norm_label": "steppedthisfixedupdate",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L49"
+    },
+    {
+      "id": "activeragdollposedriver_cs_configurablejoint",
+      "label": "ConfigurableJoint",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "configurablejoint",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "activeragdollposedriver_cs_rigidbody",
+      "label": "Rigidbody",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "rigidbody",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "activeragdollposedriver_cs_vector3",
+      "label": "Vector3",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "vector3",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "jointtarget",
+      "label": "JointTarget",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "jointtarget",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "monobehaviour",
+      "label": "MonoBehaviour",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "monobehaviour",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicsbonefollower",
+      "label": "PhysicsBoneFollower.cs",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "physicsbonefollower.cs",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "physicsbonefollower_cs_quaternion",
+      "label": "Quaternion",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "quaternion",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicsbonefollower_cs_rigidbody",
+      "label": "Rigidbody",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "rigidbody",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicsbonefollower_cs_transform",
+      "label": "Transform",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ActiveRagdollPoseDriver",
+      "file_type": "code",
+      "norm_label": "transform",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "activeragdollposedriver",
+      "label": "ActiveRagdollPoseDriver.cs",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "RagdollDemo.Character",
+      "file_type": "code",
+      "norm_label": "activeragdollposedriver.cs",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "label": "RagdollDemo.Character",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "RagdollDemo.Character",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "RagdollDemo.Character"
+      },
+      "norm_label": "ragdolldemo.character",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L4",
+      "type": "namespace"
+    },
+    {
+      "id": "physicscharacterbalancecontroller",
+      "label": "PhysicsCharacterBalanceController.cs",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "RagdollDemo.Character",
+      "file_type": "code",
+      "norm_label": "physicscharacterbalancecontroller.cs",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "physicscharactermotor_cs_physicscharactermotor",
+      "label": "PhysicsCharacterMotor.cs",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "RagdollDemo.Character",
+      "file_type": "code",
+      "norm_label": "physicscharactermotor.cs",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "shouldercameracontroller_cs_shouldercameracontroller",
+      "label": "ShoulderCameraController.cs",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "RagdollDemo.Character",
+      "file_type": "code",
+      "norm_label": "shouldercameracontroller.cs",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_balancestate_balanced",
+      "label": "Balanced",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "BalanceState",
+      "file_type": "code",
+      "norm_label": "balanced",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L16"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_balancestate_fallen",
+      "label": "Fallen",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "BalanceState",
+      "file_type": "code",
+      "norm_label": "fallen",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L18"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_balancestate_recovering",
+      "label": "Recovering",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "BalanceState",
+      "file_type": "code",
+      "norm_label": "recovering",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L19"
+    },
+    {
+      "id": "physicscharacterbalancecontroller_balancestate_staggering",
+      "label": "Staggering",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "BalanceState",
+      "file_type": "code",
+      "norm_label": "staggering",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L17"
+    },
+    {
+      "id": "collider",
+      "label": "Collider",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": ".IsCharacterCollider",
+      "file_type": "code",
+      "norm_label": "collider",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactertelemetry",
+      "label": "PhysicsCharacterTelemetry",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "physicscharactertelemetry",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "list",
+      "label": "List",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "list",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactertelemetry_cs_rigidbody",
+      "label": "Rigidbody",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "rigidbody",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactertelemetry_cs_vector2",
+      "label": "Vector2",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "vector2",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactertelemetry_cs_vector3",
+      "label": "Vector3",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "vector3",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "runtimeinitializeonloadmethod",
+      "label": "RuntimeInitializeOnLoadMethod",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "runtimeinitializeonloadmethod",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "streamwriter",
+      "label": "StreamWriter",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "streamwriter",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "stringbuilder",
+      "label": "StringBuilder",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "PhysicsCharacterTelemetry",
+      "file_type": "code",
+      "norm_label": "stringbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shouldercameracontroller_cs_layermask",
+      "label": "LayerMask",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "norm_label": "layermask",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shouldercameracontroller_cs_raycasthit",
+      "label": "RaycastHit",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "norm_label": "raycasthit",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shouldercameracontroller_cs_transform",
+      "label": "Transform",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "norm_label": "transform",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_hascontrol",
+      "label": "HasControl",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": "hascontrol",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L34"
+    },
+    {
+      "id": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_yaw",
+      "label": "Yaw",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "ShoulderCameraController",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "RagdollDemo.Character",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": "yaw",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L33"
+    },
+    {
+      "id": "jointdrivesnapshot",
+      "label": "JointDriveSnapshot",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "jointdrivesnapshot",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_cs_quaternion",
+      "label": "Quaternion",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "quaternion",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_cs_transform",
+      "label": "Transform",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "transform",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_cs_vector3",
+      "label": "Vector3",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "vector3",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_currentstate",
+      "label": "CurrentState",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "currentstate",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L144"
+    },
+    {
+      "id": "rigidbodyconstraints",
+      "label": "RigidbodyConstraints",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "PhysicsCharacterBalanceController",
+      "file_type": "code",
+      "norm_label": "rigidbodyconstraints",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "balancestate",
+      "label": "BalanceState",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "norm_label": "balancestate",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "contextmenu",
+      "label": "ContextMenu",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": ".ApplyDriveScale",
+      "file_type": "code",
+      "norm_label": "contextmenu",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_raycasthit",
+      "label": "RaycastHit",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "norm_label": "raycasthit",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_vector3",
+      "label": "Vector3",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": ".TryStepUp",
+      "file_type": "code",
+      "norm_label": "vector3",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "capsulecollider",
+      "label": "CapsuleCollider",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "norm_label": "capsulecollider",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_configurablejoint",
+      "label": "ConfigurableJoint",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "norm_label": "configurablejoint",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharactermotor_cs_rigidbody",
+      "label": "Rigidbody",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Rigidbody",
+      "file_type": "code",
+      "norm_label": "rigidbody",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "jointdrive",
+      "label": "JointDrive",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "norm_label": "jointdrive",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_cs_configurablejoint",
+      "label": "ConfigurableJoint",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "norm_label": "configurablejoint",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "physicscharacterbalancecontroller_cs_rigidbody",
+      "label": "Rigidbody",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".Awake",
+      "file_type": "code",
+      "norm_label": "rigidbody",
+      "source_file": "",
+      "source_location": ""
+    }
+  ],
+  "links": [
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcefall",
+      "target": "contextmenu",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ContextMenu"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L457",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcestagger",
+      "target": "contextmenu",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ContextMenu"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_install",
+      "target": "runtimeinitializeonloadmethod",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "RuntimeInitializeOnLoadMethod"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_fixedupdate",
+      "target": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_updategait",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower_awake",
+      "target": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_scaledrive",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L381",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharacterbalancecontroller_jointdrivesnapshot",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatelaststableforward",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcefall",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L462",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcestagger",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L452",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L304",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L305",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L285",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatemeasurements",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatelaststableforward",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isfallimpact",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L215",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isstaggerimpact",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L218",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L219",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumangularspeed",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumlinearspeed",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_finishrecovery",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_movewholerigup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L268",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isfallimpact",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L226",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_awake",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_cachecharacterbodies",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_checkground",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ischaractercollider",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_checkground",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "target": "physicscharactermotor_cs_vector3",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_applymovementacceleration",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ischaractercollider",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L297",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_getcapsuleworlddimensions",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L205",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_movecharacterbodiesup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "target": "streamwriter",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_writeheader",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_fixedupdate",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_writeheader",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onapplicationfocus",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_ondisable",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onenable",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_update",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "balancestate",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "BalanceState"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "capsulecollider",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "CapsuleCollider"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "activeragdollposedriver_cs_configurablejoint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ConfigurableJoint"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_jointtarget",
+      "target": "activeragdollposedriver_cs_configurablejoint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ConfigurableJoint"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_cs_configurablejoint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ConfigurableJoint"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "hashset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "HashSet"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "inputaction",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "InputAction"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "inputactionasset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "InputActionAsset"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_jointdrivesnapshot",
+      "target": "jointdrive",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "JointDrive"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "jointdrivesnapshot",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "JointDriveSnapshot"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "jointtarget",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "JointTarget"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_cs_layermask",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "LayerMask"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_cs_layermask",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "LayerMask"
+      },
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "list",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "List"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "PhysicsCharacterMotor"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "PhysicsCharacterMotor"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_cs_quaternion",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Quaternion"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_cs_quaternion",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Quaternion"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_cs_raycasthit",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "RaycastHit"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_cs_raycasthit",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "RaycastHit"
+      },
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "activeragdollposedriver_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "rigidbodyconstraints",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "RigidbodyConstraints"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ShoulderCameraController"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ShoulderCameraController"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "streamwriter",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "StreamWriter"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "stringbuilder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "StringBuilder"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_cs_transform",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Transform"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_cs_transform",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Transform"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_cs_transform",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Transform"
+      },
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_cs_vector2",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Vector2"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_jointtarget",
+      "target": "activeragdollposedriver_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_currentstate",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_isgrounded",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastmoveinput",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastdesiredvelocity",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lasttargetacceleration",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_lastappliedacceleration",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_steppedthisfixedupdate",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_laststeprise",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_acceleratesconnectedbodies",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_yaw",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_hascontrol",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_awake",
+      "target": "capsulecollider",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "CapsuleCollider"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharacterbalancecontroller_cs_configurablejoint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ConfigurableJoint"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_cachecharacterbodies",
+      "target": "physicscharactermotor_cs_configurablejoint",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ConfigurableJoint"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L319",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "PhysicsCharacterMotor"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "PhysicsCharacterMotor"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_install",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "PhysicsCharacterMotor"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "target": "physicscharacterbalancecontroller_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_awake",
+      "target": "physicscharactermotor_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_cachecharacterbodies",
+      "target": "physicscharactermotor_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L329",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_synchronizecontrolledyawtobody",
+      "target": "physicscharactermotor_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "target": "physicscharactertelemetry_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ShoulderCameraController"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_update",
+      "target": "physicscharactermotor_cs_vector2",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Vector2"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller",
+      "target": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "RagdollDemo.Character",
+        "scope_kind": "file"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "target": "balancestate",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "BalanceState"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L436",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ischaractercollider",
+      "target": "collider",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Collider"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "target": "physicsbonefollower_cs_quaternion",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Quaternion"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "target": "physicscharactermotor_cs_raycasthit",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RaycastHit"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "target": "physicsbonefollower_cs_rigidbody",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Rigidbody"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "target": "physicsbonefollower_cs_transform",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Transform"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "target": "physicscharactertelemetry_cs_vector2",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector2"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_applymovementacceleration",
+      "target": "physicscharactermotor_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "target": "physicscharactermotor_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "target": "physicscharactermotor_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "target": "physicscharactertelemetry_cs_vector3",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector3"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_scaledrive",
+      "target": "jointdrive",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "JointDrive"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L389",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "monobehaviour",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "MonoBehaviour"
+      },
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_balancestate",
+      "target": "physicscharacterbalancecontroller_balancestate_balanced",
+      "relation": "case_of",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_balancestate",
+      "target": "physicscharacterbalancecontroller_balancestate_staggering",
+      "relation": "case_of",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_balancestate",
+      "target": "physicscharacterbalancecontroller_balancestate_fallen",
+      "relation": "case_of",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_balancestate",
+      "target": "physicscharacterbalancecontroller_balancestate_recovering",
+      "relation": "case_of",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver",
+      "target": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver",
+      "target": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "activeragdollposedriver_ragdolldemo_character_jointtarget",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower",
+      "target": "physicsbonefollower_physicsbonefollower",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_balancestate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_jointdrivesnapshot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_cs_physicscharactermotor",
+      "target": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_cs_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_cs_shouldercameracontroller",
+      "target": "csharp_namespace:66f2b8d3d7d5a2b2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_cs_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_updategait",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver",
+      "target": "activeragdollposedriver_ragdolldemo_character_activeragdollposedriver_fixedupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ActiveRagdollPoseDriver.cs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_physicsbonefollower_trycalculateoptionaloffset",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_physicsbonefollower_awake",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "physicsbonefollower_physicsbonefollower",
+      "target": "physicsbonefollower_physicsbonefollower_lateupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsBoneFollower.cs",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_awake",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_fixedupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickbalanced",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L207",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickstaggering",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L222",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickfallen",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L233",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_tickrecovering",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L245",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterstaggering",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L282",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_enterfallen",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_beginrecovery",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_finishrecovery",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L323",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatemeasurements",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isstaggerimpact",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L353",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_isfallimpact",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_updatelaststableforward",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L363",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_applydrivescale",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L371",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_scaledrive",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L389",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumlinearspeed",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L397",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_getmaximumangularspeed",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L409",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_movewholerigup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_setstate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L436",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcestagger",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller",
+      "target": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_debugforcefall",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L457",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_fixedupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_synchronizecontrolledyawtobody",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_applymovementacceleration",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_checkground",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_trystepup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_movecharacterbodiesup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_tryraycastignoringcharacter",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ischaractercollider",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_cachecharacterbodies",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L314",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_getcapsuleworlddimensions",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L340",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_awake",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_onenable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ondisable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_ondestroy",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactermotor_ragdolldemo_character_physicscharactermotor",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_update",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterMotor.cs",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_ondestroy",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_writeheader",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_append",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_install",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_awake",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry",
+      "target": "physicscharactertelemetry_ragdolldemo_character_physicscharactertelemetry_fixedupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PhysicsCharacterTelemetry.cs",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_setcursorlock",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onenable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_ondisable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_onapplicationfocus",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_update",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller",
+      "target": "shouldercameracontroller_ragdolldemo_character_shouldercameracontroller_lateupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ShoulderCameraController.cs",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "physicscharacterbalancecontroller_physicscharacterbalancecontroller_finishrecovery",
+      "target": "physicscharactermotor_ragdolldemo_character_physicscharactermotor_synchronizecontrolledyawtobody",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "PhysicsCharacterBalanceController.cs",
+      "source_location": "L333",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "81d1041bf4dc26cb1d8fb93050e40c849d8e9611"
+}

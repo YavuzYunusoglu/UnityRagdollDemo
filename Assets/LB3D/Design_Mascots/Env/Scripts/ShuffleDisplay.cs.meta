@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e9e019ac33e33904d904940cd9e89718
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257178
+  packageName: Design Mascot
+  packageVersion: 1.0
+  assetPath: Assets/LB3D/Design_Mascots/Env/Scripts/ShuffleDisplay.cs
+  uploadId: 602270

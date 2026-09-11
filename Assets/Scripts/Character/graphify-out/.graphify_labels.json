@@ -1,0 +1,17 @@
+{
+  "0": "PhysicsCharacterMotor",
+  "1": "ActiveRagdollPoseDriver",
+  "2": "PhysicsCharacterTelemetry",
+  "3": "ShoulderCameraController",
+  "4": "PhysicsCharacterBalanceController",
+  "5": ".ApplyDriveScale",
+  "6": ".TryStepUp",
+  "7": "Rigidbody",
+  "8": "PhysicsBoneFollower",
+  "9": ".Awake",
+  "10": ".TickBalanced",
+  "11": ".EnterFallen",
+  "12": ".IsCharacterCollider",
+  "13": "BalanceState",
+  "14": "PhysicsCharacterTelemetry"
+}

@@ -1,0 +1,504 @@
+using System;
+using UnityEngine;
+
+namespace RagdollDemo.Character
+{
+    [DefaultExecutionOrder(50)]
+    [DisallowMultipleComponent]
+    public class PhysicsCharacterBalanceController : MonoBehaviour
+    {
+        public enum BalanceState
+        {
+            Balanced,
+            Staggering,
+            Fallen,
+            Recovering
+        }
+
+        private struct JointDriveSnapshot
+        {
+            public JointDrive angularX;
+            public JointDrive angularYZ;
+            public JointDrive slerp;
+
+            public JointDriveSnapshot(ConfigurableJoint joint)
+            {
+                angularX = joint.angularXDrive;
+                angularYZ = joint.angularYZDrive;
+                slerp = joint.slerpDrive;
+            }
+        }
+        [Header("References")]
+        [Tooltip("Player GameObject'inin ana Rigidbody'si. Denge açısı, kök hızı, düşme rotasyonu ve toparlanma konumu bu gövde üzerinden yönetilir.")]
+        [SerializeField] private Rigidbody rootBody;
+
+        [Tooltip("PhysicsRig altındaki ChestPhysics Rigidbody'si. Köke göre hız, açısal hız ve poz sapması darbe şiddetini ölçmek için kullanılır.")]
+        [SerializeField] private Rigidbody chestBody;
+
+        [Tooltip("Sahne kökündeki PhysicsRig Transform'u. Altındaki ConfigurableJoint ve Rigidbody'ler başlangıçta bulunup drive ölçekleme ve tüm rig'i kaldırma işlemlerinde kullanılır.")]
+        [SerializeField] private Transform physicsRig;
+
+        [Tooltip("Player üzerindeki PhysicsCharacterMotor. Düşüşte hareket kontrolünü geçici kapatır; toparlanma bitince yaw hedefini gövdenin yeni yönüyle eşitleyip kontrolü geri verir.")]
+        [SerializeField] private PhysicsCharacterMotor motor;
+
+        [Header("Impact Detection")]
+        [Tooltip("Play başladıktan sonra darbe algılamasının devreye girmeden bekleyeceği süre (saniye). Başlangıç yerleşmesindeki fizik hareketlerinin yanlış sendeleme veya düşme tetiklemesini önler.")]
+        [SerializeField, Min(0f)] private float startupGraceTime = 1f;
+
+        [Tooltip("ChestPhysics ile Player arasındaki doğrusal hız farkı bu değere ulaştığında sendeleme başlar (m/s). Düşme eşiği önce kontrol edilir.")]
+        [SerializeField, Min(0f)]
+        private float staggerRelativeSpeed = 1f;
+
+        [Tooltip("ChestPhysics ile Player arasındaki doğrusal hız farkı bu değere ulaştığında karakter doğrudan düşer (m/s).")]
+        [SerializeField, Min(0f)]
+        private float fallRelativeSpeed = 3f;
+
+        [Tooltip("ChestPhysics ile Player arasındaki açısal hız farkı bu değere ulaştığında sendeleme başlar (rad/s).")]
+        [SerializeField, Min(0f)]
+        private float staggerRelativeAngularSpeed = 3f;
+
+        [Tooltip("ChestPhysics ile Player arasındaki açısal hız farkı bu değere ulaştığında karakter doğrudan düşer (rad/s).")]
+        [SerializeField, Min(0f)]
+        private float fallRelativeAngularSpeed = 7f;
+
+        [Tooltip("Göğsün başlangıçtaki köke göre pozundan sapması bu açıya ulaştığında sendeleme başlar (derece).")]
+        [SerializeField, Range(0f, 180f)]
+        private float staggerChestDeviation = 12f;
+
+        [Tooltip("Göğsün başlangıçtaki köke göre pozundan sapması bu açıya ulaştığında karakter doğrudan düşer (derece).")]
+        [SerializeField, Range(0f, 180f)]
+        private float fallChestDeviation = 30f;
+
+        [Header("Stagger")]
+        [Tooltip("Sendeleme sırasında bütün joint drive değerlerine uygulanacak katsayı. 0 tamamen gevşek, 1 başlangıçtaki tam drive gücüdür.")]
+        [SerializeField, Range(0f, 1f)]
+        private float staggerDriveScale = 0.35f;
+
+        [Tooltip("Daha büyük bir düşme eşiği aşılmazsa sendeleme durumunun recovery başlamadan önce süreceği zaman (saniye).")]
+        [SerializeField, Min(0f)]
+        private float staggerDuration = 0.35f;
+
+        [Header("Fallen")]
+        [Tooltip("Düşmüş durumda bütün joint drive değerlerine uygulanacak katsayı. Çok düşük değer daha gevşek ragdoll, yüksek değer pozu daha sıkı koruyan düşüş üretir.")]
+        [SerializeField, Range(0f, 1f)]
+        private float fallenDriveScale = 0.03f;
+
+        [Tooltip("Karakter sakinleşmiş olsa bile recovery başlamadan önce yerde kalacağı en kısa süre (saniye).")]
+        [SerializeField, Min(0f)]
+        private float minimumFallenDuration = 1f;
+
+        [Tooltip("Fizik gövdeleri hız eşiklerinin altına inmezse recovery'nin zorla başlayacağı en uzun yerde kalma süresi (saniye).")]
+        [SerializeField, Min(0f)]
+        private float maximumFallenDuration = 3f;
+
+        [Tooltip("Player ve bütün PhysicsRig gövdelerindeki en yüksek doğrusal hız bunun altındaysa doğrusal hareket sakinleşmiş sayılır (m/s).")]
+        [SerializeField, Min(0f)]
+        private float settledLinearSpeed = 0.8f;
+
+        [Tooltip("Player ve bütün PhysicsRig gövdelerindeki en yüksek açısal hız bunun altındaysa dönüş hareketi sakinleşmiş sayılır (rad/s).")]
+        [SerializeField, Min(0f)]
+        private float settledAngularSpeed = 2.5f;
+
+        [Header("Recovery")]
+        [Tooltip("Joint drive gücünün tam değere dönmesi ve düşüşten kalkış yüksekliğinin uygulanması için hedef süre (saniye).")]
+        [SerializeField, Min(0.1f)]
+        private float recoveryDuration = 1.1f;
+
+        [Tooltip("Normal diklik ve drive koşulları tamamlanamazsa recovery'nin zorla bitirileceği güvenlik süresi (saniye).")]
+        [SerializeField, Min(0.1f)]
+        private float maximumRecoveryDuration = 2.5f;
+
+        [Tooltip("Düşüşten kalkarken Player kökünün son kararlı yöne doğru dönebileceği en yüksek hız (derece/saniye).")]
+        [SerializeField, Min(0f)]
+        private float recoveryRotationSpeed = 220f;
+
+        [Tooltip("Recovery sırasında Player kökünün açısal hızını sıfıra yaklaştıran sabit yavaşlama miktarı (rad/s²).")]
+        [SerializeField, Min(0f)]
+        private float recoveryAngularDamping = 12f;
+
+        [Tooltip("Düşüşten kalkarken Player ve bütün PhysicsRig gövdelerinin birlikte yukarı taşınacağı toplam mesafe (metre).")]
+        [SerializeField, Min(0f)]
+        private float recoveryLiftDistance = 0.35f;
+
+        [Tooltip("Player kökünün recovery hedef rotasyonuna bu açı kadar yaklaşması normal toparlanma tamamlanması için yeterlidir (derece).")]
+        [SerializeField, Range(0f, 45f)]
+        private float uprightTolerance = 5f;
+
+        [Header("Debug Kicks")]
+        [Tooltip("Debug/Force Stagger komutunda ChestPhysics'e son kararlı ileri yönde verilecek kütleden bağımsız hız değişimi (m/s).")]
+        [SerializeField, Min(0f)]
+        private float debugStaggerKick = 0.75f;
+
+        [Tooltip("Debug/Force Fall komutunda Player'a sağ ekseni çevresinde verilecek kütleden bağımsız açısal hız değişimi (rad/s).")]
+        [SerializeField, Min(0f)]
+        private float debugFallAngularKick = 3.5f;
+
+        [Header("Live Readout")]
+        [Tooltip("State machine'in Play sırasında bulunduğu güncel durum. İzleme değeridir; çalışma anında controller tarafından yazılır.")]
+        [SerializeField] private BalanceState currentState;
+
+        [Tooltip("ChestPhysics'in başlangıçtaki köke göre rotasyonundan güncel sapması (derece). İzleme değeridir.")]
+        [SerializeField] private float chestDeviation;
+
+        [Tooltip("ChestPhysics ile Player arasındaki güncel doğrusal hız farkının büyüklüğü (m/s). İzleme değeridir.")]
+        [SerializeField] private float relativeLinearSpeed;
+
+        [Tooltip("ChestPhysics ile Player arasındaki güncel açısal hız farkının büyüklüğü (rad/s). İzleme değeridir.")]
+        [SerializeField] private float relativeAngularSpeed;
+
+        [Tooltip("Player'ın yukarı ekseni ile dünya yukarı ekseni arasındaki güncel açı (derece). Şimdilik yalnız izlenir; state kararında kullanılmaz.")]
+        [SerializeField] private float rootTilt;
+
+        [Tooltip("Başlangıç joint drive değerlerine uygulanan güncel katsayı. 1 tam güç, 0 tamamen kapalı drive anlamına gelir. İzleme değeridir.")]
+        [SerializeField] private float currentDriveScale = 1f;
+
+        private ConfigurableJoint[] joints;
+        private Rigidbody[] rigBodies;
+        private JointDriveSnapshot[] defaultDrives;
+
+        private RigidbodyConstraints defaultRootConstraints;
+        private Quaternion restChestRelativeRotation;
+        private Quaternion recoveryTargetRotation;
+
+        private Vector3 lastStableForward = Vector3.forward;
+
+        private float runtime;
+        private float stateTime;
+        private float recoveryLiftRemaining;
+
+        private bool initialized;
+        private bool recoveringFromFall;
+        private bool motorWasEnabledBeforeFall;
+
+        public BalanceState CurrentState => currentState;
+
+        private void Awake()
+        {
+            if (rootBody == null) rootBody = GetComponent<Rigidbody>();
+            if (motor == null) motor = GetComponent<PhysicsCharacterMotor>();
+
+            if (rootBody == null || chestBody == null || physicsRig == null || motor == null)
+            {
+                Debug.LogError("Balance Controller needs Root Body, Chest Body, Physics Rig and motor.", this);
+                enabled = false;
+                return;
+            }
+
+            joints = physicsRig.GetComponentsInChildren<ConfigurableJoint>(true);
+            rigBodies = physicsRig.GetComponentsInChildren<Rigidbody>(true);
+
+            if (joints.Length == 0)
+            {
+                Debug.LogError("No configurable joints were found under physics rig.", this);
+                enabled = false;
+                return;
+            }
+
+            defaultDrives = new JointDriveSnapshot[joints.Length];
+            for (int i = 0; i < joints.Length; i++)
+                defaultDrives[i] = new JointDriveSnapshot(joints[i]);
+
+            defaultRootConstraints = rootBody.constraints;
+
+            restChestRelativeRotation = Quaternion.Inverse(rootBody.rotation) * chestBody.rotation;
+            UpdateLastStableForward();
+            ApplyDriveScale(1f);
+
+            currentState = BalanceState.Balanced;
+            initialized = true;
+        }
+
+        private void FixedUpdate()
+        {
+            if (!initialized)
+                return;
+
+            float deltatime = Time.fixedDeltaTime;
+
+            runtime += deltatime;
+            stateTime += deltatime;
+
+            UpdateMeasurements();
+
+            switch (CurrentState)
+            {
+                case BalanceState.Balanced:
+                    TickBalanced(); break;
+                case BalanceState.Staggering:
+                    TickStaggering(); break;
+                case BalanceState.Fallen:
+                    TickFallen(); break;
+                case BalanceState.Recovering:
+                    TickRecovering(deltatime); break;
+            }
+        }
+
+        private void TickBalanced()
+        {
+            UpdateLastStableForward();
+            if (runtime < startupGraceTime)
+                return;
+
+            if (IsFallImpact())
+            {
+                EnterFallen();
+                return;
+            }
+            if (IsStaggerImpact())
+                EnterStaggering();
+        }
+
+        private void TickStaggering()
+        {
+            if (IsFallImpact())
+            {
+                EnterFallen();
+                return;
+            }
+            if (stateTime >= staggerDuration)
+                BeginRecovery(false);
+        }
+
+        private void TickFallen()
+        {
+            bool minimumTimePassed = stateTime >= minimumFallenDuration;
+
+            bool settled = GetMaximumLinearSpeed() <= settledLinearSpeed && GetMaximumAngularSpeed() <= settledAngularSpeed;
+
+            bool timedOut = stateTime >= maximumFallenDuration;
+
+            if (minimumTimePassed && (settled || timedOut))
+                BeginRecovery(true);
+        }
+
+        private void TickRecovering(float deltatime)
+        {
+            float driveStep = deltatime / recoveryDuration;
+
+            ApplyDriveScale(Mathf.MoveTowards(currentDriveScale, 1f, driveStep));
+
+            if (!recoveringFromFall)
+            {
+                if (currentDriveScale >= 0.999f)
+                    FinishRecovery();
+
+                return;
+            }
+
+            rootBody.angularVelocity = Vector3.MoveTowards(rootBody.angularVelocity, Vector3.zero, recoveryAngularDamping * deltatime);
+
+
+            rootBody.MoveRotation(Quaternion.RotateTowards(rootBody.rotation, recoveryTargetRotation, recoveryRotationSpeed * deltatime));
+
+            if (recoveryLiftRemaining > 0f)
+            {
+                float lift = Mathf.Min(recoveryLiftRemaining, recoveryLiftDistance / recoveryDuration * deltatime);
+
+                MoveWholeRigUp(lift);
+                recoveryLiftRemaining -= lift;
+            }
+
+            float uprightError = Quaternion.Angle(rootBody.rotation, recoveryTargetRotation);
+
+            bool recoveredNormally = stateTime >= recoveryDuration && currentDriveScale >= 0.999f && uprightError <= uprightTolerance;
+
+            bool recoveryTimedOut = stateTime >= maximumRecoveryDuration;
+
+            if (recoveredNormally || recoveryTimedOut)
+                FinishRecovery();
+        }
+
+        private void EnterStaggering()
+        {
+            SetState(BalanceState.Staggering);
+            ApplyDriveScale(staggerDriveScale);
+        }
+
+        private void EnterFallen()
+        {
+            if (currentState == BalanceState.Fallen)
+                return;
+
+            motorWasEnabledBeforeFall = motor.enabled;
+            motor.enabled = false;
+
+            RigidbodyConstraints fallConstraints = defaultRootConstraints;
+
+            fallConstraints &= ~(RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ);
+
+            fallConstraints |= RigidbodyConstraints.FreezeRotationY;
+
+            rootBody.constraints = fallConstraints;
+
+            SetState(BalanceState.Fallen);
+            ApplyDriveScale(fallenDriveScale);
+        }
+
+        private void BeginRecovery(bool fromFall)
+        {
+            recoveringFromFall = fromFall;
+
+            if (fromFall)
+            {
+                recoveryTargetRotation = Quaternion.LookRotation(lastStableForward, Vector3.up);
+
+                recoveryLiftRemaining = recoveryLiftDistance;
+
+                ApplyDriveScale(Mathf.Max(currentDriveScale, 0.15f));
+            }
+            SetState(BalanceState.Recovering);
+        }
+
+        private void FinishRecovery()
+        {
+            bool wasRecoveringFromFall = recoveringFromFall;
+
+            if (wasRecoveringFromFall)
+            {
+                rootBody.rotation = recoveryTargetRotation;
+                rootBody.angularVelocity = Vector3.zero;
+                rootBody.constraints = defaultRootConstraints;
+
+                motor.SynchronizeControlledYawToBody();
+
+                if (motorWasEnabledBeforeFall)
+                    motor.enabled = true;
+            }
+            recoveringFromFall = false;
+            recoveryLiftRemaining = 0f;
+
+            ApplyDriveScale(1f);
+            SetState(BalanceState.Balanced);
+        }
+        private void UpdateMeasurements()
+        {
+            relativeLinearSpeed = (chestBody.linearVelocity - rootBody.linearVelocity).magnitude;
+
+            relativeAngularSpeed = (chestBody.angularVelocity - rootBody.angularVelocity).magnitude;
+
+            Quaternion currentChestRelativeRotation = Quaternion.Inverse(rootBody.rotation) * chestBody.rotation;
+
+            chestDeviation = Quaternion.Angle(restChestRelativeRotation, currentChestRelativeRotation);
+
+            rootTilt = Vector3.Angle(rootBody.transform.up, Vector3.up);
+
+        }
+
+        private bool IsStaggerImpact()
+        {
+            return relativeLinearSpeed >= staggerRelativeSpeed || relativeAngularSpeed >= staggerRelativeAngularSpeed || chestDeviation >= staggerChestDeviation;
+        }
+
+        private bool IsFallImpact()
+        {
+            return relativeLinearSpeed >= fallRelativeSpeed || relativeAngularSpeed >= fallRelativeAngularSpeed || chestDeviation >= fallChestDeviation;
+        }
+
+        private void UpdateLastStableForward()
+        {
+            Vector3 planarForward = Vector3.ProjectOnPlane(rootBody.transform.forward, Vector3.up);
+
+            if (planarForward.sqrMagnitude > 0.001f)
+                lastStableForward = planarForward.normalized;
+        }
+
+        private void ApplyDriveScale(float scale)
+        {
+            currentDriveScale = Mathf.Clamp01(scale);
+
+            for (int i = 0; i < joints.Length; i++)
+            {
+                ConfigurableJoint joint = joints[i];
+
+                JointDriveSnapshot source = defaultDrives[i];
+
+                joint.angularXDrive = ScaleDrive(source.angularX, currentDriveScale);
+
+                joint.angularYZDrive = ScaleDrive(source.angularYZ, currentDriveScale);
+
+                joint.slerpDrive = ScaleDrive(source.slerp, currentDriveScale);
+            }
+
+        }
+        private static JointDrive ScaleDrive(JointDrive source, float scale)
+        {
+            source.positionSpring *= scale;
+            source.positionDamper *= scale;
+            source.maximumForce *= scale;
+            return source;
+        }
+
+        private float GetMaximumLinearSpeed()
+        {
+            float maximum = rootBody.linearVelocity.magnitude;
+
+            foreach (Rigidbody body in rigBodies)
+            {
+                if (body != null)
+                    maximum = Mathf.Max(maximum, body.linearVelocity.magnitude);
+            }
+            return maximum;
+        }
+
+        private float GetMaximumAngularSpeed()
+        {
+            float maximum = rootBody.angularVelocity.magnitude;
+
+            foreach (Rigidbody body in rigBodies)
+            {
+                if (body != null)
+                    maximum = Mathf.Max(maximum, body.angularVelocity.magnitude);
+            }
+            return maximum;
+        }
+
+        private void MoveWholeRigUp(float distance)
+        {
+            Vector3 displacement = Vector3.up * distance;
+
+            rootBody.MovePosition(rootBody.position + displacement);
+
+            foreach (Rigidbody body in rigBodies)
+            {
+                if (body == null || body == rootBody)
+                    continue;
+
+                body.MovePosition(body.position + displacement);
+            }
+        }
+
+        private void SetState(BalanceState nextState)
+        {
+            if (CurrentState == nextState)
+                return;
+
+            currentState = nextState;
+            stateTime = 0f;
+
+            Debug.Log($"Balance State changed to {nextState}", this);
+        }
+
+        [ContextMenu("Debug/Force Stagger")]
+        private void DebugForceStagger()
+        {
+            if (!Application.isPlaying || !initialized) return;
+
+            EnterStaggering();
+
+            chestBody.AddForce(lastStableForward * debugStaggerKick, ForceMode.VelocityChange);
+        }
+
+        [ContextMenu("Debug/Force Fall")]
+        private void DebugForceFall()
+        {
+            if (!Application.isPlaying || !initialized) return;
+
+            EnterFallen();
+
+            rootBody.AddTorque(rootBody.transform.right * debugFallAngularKick, ForceMode.VelocityChange);
+        }
+    }
+
+
+}
+
